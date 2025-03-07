@@ -1,6 +1,6 @@
-# 💰 Finance App - Controle Financeiro Pessoal
+#💰 Finance App - Controle Financeiro Pessoal
 
-![Banner](https://via.placeholder.com/1200x400.png?text=Controle+Financeiro+Inteligente)
+
 
 Aplicativo completo para gestão de finanças pessoais desenvolvido durante o 4º período da UTFOR.
 
@@ -16,7 +16,7 @@ Aplicativo completo para gestão de finanças pessoais desenvolvido durante o 4�
 - Node.js 18+
 - PostgreSQL 15
 
-```bash
+bash
 # Clone o repositório
 git clone https://github.com/josedev2003/finance-app.git
 cd finance-app
@@ -69,20 +69,7 @@ finance-app/
 MIT License - veja LICENSE
 
 Desenvolvido por José Dev
-📧 jose.dev@example.com
-🔗 LinkedIn
+📧 jose.dev.metz@gmail.com
 
-Copy
 
-### 2️⃣ Passos para usar no GitHub:
-1. No seu repositório, clique em "Add file" > "Create new file"
-2. Nomeie como `README.md`
-3. Cole todo o conteúdo acima
-4. Role até o final e clique em "Commit new file"
 
-### ⚠️ Importante!
-- Remova os comentários entre ``` antes de salvar
-- Substitua:
-  - `SEU_USUARIO` e `SUA_SENHA` pelas suas credenciais do PostgreSQL
-  - Links de contato no final
-  - URL da imagem do banner (opcional)
