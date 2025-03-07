@@ -1,6 +1,6 @@
 # 💰 Finance App - Controle Financeiro Pessoal
 
-Aplicativo completo para gestão de finanças pessoais, desenvolvido durante o 4º período da UTFOR. O Finance App permite que os usuários gerenciem suas receitas e despesas de forma eficiente, utilizando uma interface intuitiva e um back-end robusto.
+Aplicativo completo para gestão de finanças pessoais.O Finance App permite que os usuários gerenciem suas receitas e despesas de forma eficiente, utilizando uma interface intuitiva e um back-end.
 
 ---
 
