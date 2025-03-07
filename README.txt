@@ -1,94 +1,88 @@
-💰 Aplicação de Controle Financeiro Pessoal
-Este projeto é uma aplicação full-stack para gerenciamento de finanças pessoais, permitindo o controle de receitas e despesas de forma simples e eficiente.
+# 💰 Finance App - Controle Financeiro Pessoal
 
-🛠️ Tecnologias Utilizadas
-Back-end: Java com Spring Boot
-Front-end: React.js com axios(Biblioteca)
-Banco de Dados: PostgreSQL
+![Banner](https://via.placeholder.com/1200x400.png?text=Controle+Financeiro+Inteligente)
 
+Aplicativo completo para gestão de finanças pessoais desenvolvido durante o 4º período da UTFOR.
 
-📦 Estrutura do Projeto
-O projeto é dividido em duas partes principais:
-Back-end: Fornece uma API RESTful para gerenciar transações financeiras.
-Front-end: Interface de usuário para interação com a API.
+## 🚀 Tecnologias
+- **Front-end:** React JS
+- **Back-end:** Spring Boot (Java)
+- **Banco de Dados:** PostgreSQL
 
-🚀 Como Executar o Projeto
-Pré-requisitos
-Java 17 ou superior
-Node.js (versão 14 ou superior)
-PostgreSQL (versão 12 ou superior)
+## ⚙️ Configuração Local
 
-Passo 1: Configuração do Banco de Dados
-Criar o Banco de Dados:
+### Pré-requisitos
+- Java 17
+- Node.js 18+
+- PostgreSQL 15
 
-CREATE DATABASE finance_db;
-Criar a Tabela de Transações:
-
-CREATE TABLE transactions (
-    id SERIAL PRIMARY KEY,
-    type VARCHAR(50) NOT NULL,
-    category VARCHAR(100) NOT NULL,
-    amount DECIMAL(10,2) NOT NULL,
-    date DATE NOT NULL
-);
-
-
-Passo 2: Configuração do Back-end
-Clonar o Repositório:
+```bash
+# Clone o repositório
 git clone https://github.com/josedev2003/finance-app.git
-cd finance-app/backend
-Configurar o application.properties:
+cd finance-app
+Banco de Dados
+Crie o banco:
 
-No arquivo src/main/resources/application.properties, configure as credenciais do banco de dados:
+sql
+Copy
+CREATE DATABASE finance_db;
+Execute o schema:
 
+bash
+Copy
+psql -U postgres -d finance_db -f database/schema.sql
+Back-end (Spring Boot)
+Edite o arquivo:
+BackendFinanceApp/finaceapp/src/main/resources/application.properties
+
+properties
+Copy
 spring.datasource.url=jdbc:postgresql://localhost:5432/finance_db
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
-Executar a Aplicação:
+spring.datasource.username=SEU_USUARIO
+spring.datasource.password=SUA_SENHA
+Execute:
 
+bash
+Copy
+cd BackendFinanceApp/finaceapp
 ./mvnw spring-boot:run
-A API estará disponível em http://localhost:8080/api/transactions.
+Front-end (React)
+Crie .env em FrontendFinanceApp:
 
-Passo 3: Configuração do Front-end
-Instalar Dependências:
+env
+Copy
+VITE_API_URL=http://localhost:8080
+Execute:
 
-cd ../frontend
+bash
+Copy
+cd FrontendFinanceApp
 npm install
-npm install axios
-Executar a Aplicação:
-
-npm start
-A interface estará disponível em http://localhost:3000.
-
-
-
-📄 Funcionalidades
-Adicionar Transações: Registre receitas ou despesas com categoria, valor e data.
-Listar Transações: Visualize todas as transações registradas.
-Adicionar Transações: Adicionar transações.
-Calculo de Valor total: Calcular valor total de transações.
-
-
-📂 Estrutura de Pastas
+npm run dev
+📂 Estrutura
+Copy
 finance-app/
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/financeapp/
-│   │   │   │   ├── controllers/
-│   │   │   │   ├── models/
-│   │   │   │   ├── repositories/
-│   │   │   │   └── services/
-│   │   │   └── resources/
-│   │   │       └── application.properties
-│   └── pom.xml
-└── frontend/
-    ├── src/
-    │   ├── components/
-    │   ├── App.js
-    │   └── index.js
-    └── package.json
+├── BackendFinanceApp/  # API Java
+├── FrontendFinanceApp/ # Interface React
+└── database/           # Scripts PostgreSQL
+📄 Licença
+MIT License - veja LICENSE
 
+Desenvolvido por José Dev
+📧 jose.dev@example.com
+🔗 LinkedIn
 
-🤝 Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+Copy
+
+### 2️⃣ Passos para usar no GitHub:
+1. No seu repositório, clique em "Add file" > "Create new file"
+2. Nomeie como `README.md`
+3. Cole todo o conteúdo acima
+4. Role até o final e clique em "Commit new file"
+
+### ⚠️ Importante!
+- Remova os comentários entre ``` antes de salvar
+- Substitua:
+  - `SEU_USUARIO` e `SUA_SENHA` pelas suas credenciais do PostgreSQL
+  - Links de contato no final
+  - URL da imagem do banner (opcional)
